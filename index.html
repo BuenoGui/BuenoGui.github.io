@@ -1,13 +1,21 @@
 <head>
-  <title>Guilherme Bueno Design</title>
+  <title>Guilherme Bueno Design
+  </title>
+
   <link rel="stylesheet" type="text/css" href="userstyle.css" media="screen" />
+
+  <!-- <script type="text/javascript" src="js\navBarFixa.js"></script> -->
+
   </head>
+
+<!-- Barra navegação-->
+<div id="navbar">
+  <a href="index.html">guilherme bueno</a>
+  <a href="sobre">sobre</a>
+</div> 
 
 <!-- MAIN (Center website) -->
  <div class="main">
-
-    <h1>guilherme bueno alcântara&emsp;&emsp;sobre</h1>
-    <hr>
     
     <!-- Portfolio Gallery Grid -->
     <!-- <div class="content">
@@ -18,73 +26,36 @@
     
     <div class="row">
       <div class="column">
-        <div class="content">
-          <img src="Img\capa_AnaisDoICongressoSobreOBiomaPampa.png" alt="Lights" style="width:100%">
-          <h3></h3>
-          <p></p>
-        </div>
+        <a href="index.html"><img src="Img\capa_AnaisDoICongressoSobreOBiomaPampa.png" alt="Lights" style="width:100%"></a>
+        <img src="Img\capa_MemóriaEPatrimônio_Vol2.png" alt="Nature" style="width:100%">
+        <img src="Img\capa_OLugarDoAbjeto.png " alt="Lights" style="width:100%">
       </div>
       <div class="column">
-        <div class="content">
-          <img src="Img\capa_DesigualdadesEmSaúdeMaternoInfantil.png" alt="Nature" style="width:100%">
-          <h3></h3>
-          <p></p>
-        </div>
+        <img src="Img\capa_DesigualdadesEmSaúdeMaternoInfantil.png" alt="Nature" style="width:100%">
+        <img src="Img\capa_MemóriaEPatrimônio_Vol1.png" alt="Lights" style="width:100%">
+        <img src="Img\capa_ProcessosDeTrabalhoESeusEfeitos.png" alt="Nature" style="width:100%">
       </div>
       <div class="column">
-        <div class="content">
-          <img src="Img\capa_LetrasDaProduçãoÀDidática.png" alt="Mountains" style="width:100%">
-          <h3></h3>
-          <p></p>
-        </div>
+        <img src="Img\capa_LetrasDaProduçãoÀDidática.png" alt="Mountains" style="width:100%">
+        <img src="Img\capa_MemóriaEPatrimônio_Vol3.png" alt="Mountains" style="width:100%">
+        <img src="Img\capa_UmaColôniaCercadaDeEstâncias.png" alt="Mountains" style="width:100%">
       </div>
-
-      <div class="row">
-        <div class="column">
-          <div class="content">
-            <img src="Img\capa_MemóriaEPatrimônio_Vol1.png" alt="Lights" style="width:100%">
-            <h3></h3>
-            <p></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="content">
-            <img src="Img\capa_MemóriaEPatrimônio_Vol2.png" alt="Nature" style="width:100%">
-            <h3></h3>
-            <p></p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="content">
-            <img src="Img\capa_MemóriaEPatrimônio_Vol3.png" alt="Mountains" style="width:100%">
-            <h3></h3>
-            <p></p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="column">
-            <div class="content">
-              <img src="Img\capa_OLugarDoAbjeto.png " alt="Lights" style="width:100%">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="Img\capa_ProcessosDeTrabalhoESeusEfeitos.png" alt="Nature" style="width:100%">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <img src="Img\capa_UmaColôniaCercadaDeEstâncias.png" alt="Mountains" style="width:100%">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>
     </div>
     
     <!-- END MAIN -->
     </div> 
+
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>

@@ -52,7 +52,7 @@
   
   /* Center website */
   .main {
-    max-width: 1000px;
+    max-width: 1080px;
     margin: auto;
   }
   
@@ -70,18 +70,18 @@
   .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 8px;
+    padding: 0 20px;
   }
   
   /* Create four equal columns that sits next to each other */
   .column {
     flex: 33.333%;
     max-width: 33.333%;
-    padding: 0 8px;
+    padding: 0 20px;
   }
   
   .column img {
-    margin-top: 16px;
+    margin-top: 40px;
     vertical-align: middle;
     width: 100%;
   }

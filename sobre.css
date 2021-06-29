@@ -1,6 +1,8 @@
 /* Style the navbar */
- #navbar {
+#navbar {
   overflow: hidden;
+  position: fixed;
+  top: 0px;
   background-color: #f1f1f1;
 }
 
@@ -10,9 +12,10 @@
   display: block;
   color: #18191A;
   text-align: center;
-  padding: 0px;
+  padding-top: 14px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 600;
   font-family: sans-serif;
 }
 
@@ -41,6 +44,8 @@
     background-color: #f1f1f1;
     color: #18191A;
     padding: 14px;
+    font-size: 12px;
+    line-height: 1.5;
     font-family: sans-serif;
     font-weight: normal;
   }
@@ -53,19 +58,21 @@
   
   h1 {
     word-break: break-all;
-    font-size: 14px;
+    line-height: 1.5;
+    font-size: 12px;
     margin-top: 28px;
-    font-style: bold;
+    font-weight: 600;
   }
 
   h2, h3, h4, h5, h6 {
     word-break: break-all;
-    font-size: 14px;
+    line-height: 1.5;
+    font-size: 12px;
     font-weight: normal;
   }
 
   p {
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .row {

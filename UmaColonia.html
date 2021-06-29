@@ -1,0 +1,49 @@
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <title>Uma Colônia Cercada de Instâncias</title>
+
+    <link rel="stylesheet" type="text/css" href="projetos.css" media="screen" />
+
+</head>
+
+<!-- Barra navegação-->
+<div id="navbar">
+    <a href="index.html">guilherme bueno</a>
+    <a>&emsp;&emsp;</a>
+    <a href="sobre.html">sobre</a>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="column-left">
+            <img src="Img\BiomaPampa\capa_AnaisDoICongressoSobreOBiomaPampa.png" alt="Lights"><br>
+            <img src="Img\capa_DesigualdadesEmSaúdeMaternoInfantil.png" alt="Nature"><br>
+            <img src="Img\capa_LetrasDaProduçãoÀDidática.png" alt="Lights">
+        </div>
+        <div class="column-right">
+            <h1>NOME DO PROJETO</h1>
+
+            <body>Projeto realizado em tal período, para tal pessoa. Descrição brevíssima sobre a obra. Descrição do que
+                fiz</body><br><br>
+
+            <body><b>Guilherme Bueno</b><br><small>diagramação & projeto gráfico</small></body>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.onscroll = function () { myFunction() };
+  
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+  
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>

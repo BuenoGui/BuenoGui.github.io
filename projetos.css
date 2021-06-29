@@ -74,21 +74,21 @@
     }
     
     .column-left {
-      flex: 75%;
-      max-width: 75%;
+      flex: 25%;
+      max-width: 25%;
       padding: 0px;
     }
 
     .column-right {
-      flex: 25%;
-      max-width: 25%;
+      flex: 75%;
+      max-width: 75%;
       padding: 0px 0px 14px 0px;
       max-width: 50ch;
     }
     
     .column-left img {
       margin-top: 16px;
-      vertical-align: middle;
+      box-align: middle;
       width: 100%;
     }
     

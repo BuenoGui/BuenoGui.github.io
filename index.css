@@ -10,8 +10,10 @@
   display: block;
   color: #18191A;
   text-align: center;
-  padding: 8px;
+  padding: 0px;
   text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
 }
 
 /* Page content */
@@ -37,7 +39,8 @@
   
   body {
     background-color: #f1f1f1;
-    padding: 12px;
+    color: #18191A;
+    padding: 14px;
     font-family: sans-serif;
   }
   
@@ -48,12 +51,12 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-size: 12px;
+    font-size: 14px;
     word-break: break-all;
   }
 
   p {
-    font-size: 12px;
+    font-size: 14px;
   }
   
   .row {

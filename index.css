@@ -1,103 +1,109 @@
- /* Style the navbar */
- #navbar {
-  overflow: hidden;
-  position: fixed;
-  top: 0px;
+body {
   background-color: #f1f1f1;
+  color: #18191A;
+  font-family: sans-serif;
+  font-size: 12px;
 }
 
-/* Navbar links */
-#navbar a {
+h1 {
+  font-size: 12px;
+  line-height: 1.5;
+  word-break: break-all;
+  font-weight: bold;
+}
+
+/* Definições visuais do estilo de parágrafo */
+p {
+  font-size: 12px;
+  line-height: 1.5;
+  word-break: break-all;
+  font-weight: normal;
+}
+
+/* Classe que define o número de caracteres máximo por linha. Deve ser chamado no html */
+.caracteresPorLinha {
+  width: 50ch;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+ /* Classe que define a barra de navegação */
+ .barraNaveg {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links internos da barra de navegação */
+.barraNaveg a {
   float: left;
   display: block;
   color: #18191A;
   text-align: center;
-  padding-top: 14px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 12px;
-  font-weight: 600;
-  font-family: sans-serif;
 }
 
-/* Page content */
-.content {
-  padding: 8px;
+/* Muda o background do link com a passagem do mouse
+.barraNaveg a:hover {
+  outline: 1px #18191A;
+  outline-style: solid;
+  outline-offset: -6px;
+  color: #18191A;
+} */
+
+/* Classe que define o "miolo" do site. Importante para o uso da barra de navegação */
+.miolo {
+  margin-top: 44px; /* Margem superior que impede o texto de "nascer" abaixo da barra de navegação */
+  /* margin-left: 16px; FAZ SENTIDO NA PAGINA SOBRE */
+  max-width: 1280px;
+  margin: auto;
+} 
+
+/* Definições do mosaico */
+/* Classe que define as linhas do mosaico */
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
+/* Classe que define as colunas. O jogo de porcentagem define o número de colunas.  */
+.coluna {
+  flex: 10%;
+  max-width: 33.333%;
+  padding: 0 20px;
+}
+
+/* Acho que essa classe define o funcionamento das imagens nas colunas */
+.coluna img {
+  margin-top: 44px;
+  vertical-align: middle;
   width: 100%;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-} 
+.coluna a:hover {
+  outline: 1px #18191A;
+  outline-style: dotted;
+  outline-offset: 16px;
+  color: #18191A;
+}
 
-* {
-    box-sizing: border-box;
+/* Layout responsivo - adapta o layout para duas colunas */
+@media screen and (max-width: 800px) {
+  .coluna {
+    flex: 100%;
+    max-width: 50%;
   }
-  
-  body {
-    background-color: #f1f1f1;
-    color: #18191A;
-    padding: 14px;
-    font-size: 12px;
-    line-height: 1.5;
-    font-family: sans-serif;
-    font-weight: normal;
-  }
-  
-  /* Center website */
-  .main {
-    max-width: 1080px;
-    margin: auto;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 12px;
-    line-height: 1.5;
-    word-break: break-all;
-    font-weight: 600;
-  }
+}
 
-  p {
-    font-size: 12px;
+/* Layout responsivo - Empilha todas colunas. */
+@media screen and (max-width: 600px) {
+  .coluna {
+    flex: 100%;
+    max-width: 100%;
   }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 20px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 33.333%;
-    max-width: 33.333%;
-    padding: 0 20px;
-  }
-  
-  .column img {
-    margin-top: 40px;
-    vertical-align: middle;
-    width: 100%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+}

@@ -1,101 +1,101 @@
- /* Style the navbar */
- #navbar {
-    overflow: hidden;
-    position: fixed;
-    top: 0px;
-    background-color: #f1f1f1;
-  }
-  
-  /* Navbar links */
-  #navbar a {
-    float: left;
-    display: block;
-    color: #18191A;
-    text-align: center;
-    padding-top: 14px;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 600;
-    font-family: sans-serif;
-  }
-  
-  /* Page content */
-  .content {
-    padding: 8px;
-  }
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  } 
-  
-  * {
-      box-sizing: border-box;
-    }
-    
-    body {
-      background-color: #f1f1f1;
-      color: #18191A;
-      padding: 14px;
-      font-size: 12px;
-      line-height: 1.5;
-      font-family: sans-serif;
-      font-weight: normal;
-    }
-    
-    /* Center website */
-    .main {
-      max-width: 1000px;
-      margin: auto;
-    }
-    
-    h1, h2, h3, h4, h5, h6 {
-      font-size: 12px;
-      line-height: 1.5;
-      word-break: break-all;
-      font-weight: 600;
-    }
-  
-    p {
-      font-size: 12px;
-    }
+body {
+  background-color: #f1f1f1;
+  color: #18191A;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-variant-numeric: oldstyle-nums;
+}
 
-    .row {
+h1 {
+  font-size: 12px;
+  line-height: 1.5;
+  word-break: break-all;
+  font-weight: bold;
+}
+
+/* Definições visuais do estilo de parágrafo */
+p {
+  font-size: 12px;
+  line-height: 1.5;
+  word-break: break-all;
+  font-weight: normal;
+}
+
+/* Classe que define o número de caracteres máximo por linha. Deve ser chamado no html */
+.caracteresPorLinha {
+  max-width: 55ch;
+  word-break: break-word;
+}
+
+ /* Classe que define a barra de navegação */
+ .barraNaveg {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links internos da barra de navegação */
+.barraNaveg a {
+  float: left;
+  display: block;
+  color: #18191A;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Muda o background do link com a passagem do mouse
+.barraNaveg a:hover {
+  outline: 1px #18191A;
+  outline-style: solid;
+  outline-offset: -6px;
+  color: #18191A;
+} */
+
+/* Classe que define o "miolo" do site. Importante para o uso da barra de navegação. Estava dando conflito com o sistema de linhas e colunas. Não chamei ele no HTML */
+.miolo {
+  margin-top: 44px; /* Margem superior que impede o texto de "nascer" abaixo da barra de navegação */
+  margin-left: 16px;
+  margin-right: 16px;
+} 
+
+.linha {
       display: flex;
       flex-wrap: wrap;
       padding: 14px 0px;
     }
     
-    .column-left {
-      flex: 25%;
-      max-width: 25%;
-      padding: 0px;
+    .coluna-esq {
+      flex: 10%;
+      max-width: 75%;
+      padding: 44px 14px 0px 14px;
     }
 
-    .column-right {
-      flex: 75%;
-      max-width: 75%;
-      padding: 0px 0px 14px 0px;
-      max-width: 50ch;
+    .coluna-dir {
+      flex: 10%;
+      max-width: 25%;
+      padding: 44px 14px 14px 14px;
     }
     
-    .column-left img {
-      margin-top: 16px;
+    .coluna-esq img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      width: 500px;
+      /*
+      margin-bottom: 20px;
       box-align: middle;
-      width: 100%;
+      width: 500px;
+      */
     }
     
     
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .column-left, .column-right {
+    @media screen and (max-width: 800px) {
+      .coluna-esq, .coluna-dir {
         flex: 100%;
         max-width: 100%;
       }

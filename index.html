@@ -1,54 +1,52 @@
+<!DOCTYPE html>
+<html>
+
 <head>
   <title>Guilherme Bueno Design</title>
-
-  <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
-
+  <!--Define o título da aba no navegador-->
+  <link rel="stylesheet" type="text/css" href="index.css" media="screen" /> <!-- Chama o CSS com os estilos -->
 </head>
 
-<!-- Barra navegação-->
-<div id="navbar">
-  <a href="index.html">guilherme bueno</a>
-  <a>&emsp;&emsp;</a>
+<!-- Barra de navegação -->
+<div class="barraNaveg">
+
+  <a href="index.html"><b>guilherme bueno</b></a>
   <a href="sobre.html">sobre</a>
+  
 </div>
 
-<!-- MAIN (Center website) -->
-<div class="main">
+<!-- Miolo do site -->
 
+<body>
+  <div class="miolo">
 
-  <div class="row">
-    <div class="column">
-      <a href="index.html"><img src="Img\BiomaPampa\capa_AnaisDoICongressoSobreOBiomaPampa.png" alt="Lights"
-          style="width:100%"></a>
-      <img src="Img\capa_MemóriaEPatrimônio_Vol2.png" alt="Nature" style="width:100%">
-      <img src="Img\capa_OLugarDoAbjeto.png " alt="Lights" style="width:100%">
+    <div class="linha">
+
+      <div class="coluna">
+        
+        <img src="Img\BiomaPampa\capa_AnaisDoICongressoSobreOBiomaPampa.png">
+        <a href="UmaColonia.html"><img src="Img\capa_UmaColôniaCercadaDeEstâncias.png"></a>
+
+      </div>
+
+      <div class="coluna">
+
+        <img src="Img\capa_ProcessosDeTrabalhoESeusEfeitos.png">
+        <img src="Img\capa_MemóriaEPatrimônio_Vol1.png">
+        
+      </div>
+      
+      <div class="coluna">
+        
+        <img src="Img\capa_OLugarDoAbjeto.png">
+        <img src="Img\capa_LetrasDaProduçãoÀDidática.png">
+
+      </div>
+
     </div>
-    <div class="column">
-      <img src="Img\capa_DesigualdadesEmSaúdeMaternoInfantil.png" alt="Nature" style="width:100%">
-      <img src="Img\capa_MemóriaEPatrimônio_Vol1.png" alt="Lights" style="width:100%">
-      <img src="Img\capa_ProcessosDeTrabalhoESeusEfeitos.png" alt="Nature" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="Img\capa_LetrasDaProduçãoÀDidática.png" alt="Mountains" style="width:100%">
-      <img src="Img\capa_MemóriaEPatrimônio_Vol3.png" alt="Mountains" style="width:100%">
-      <img src="Img\capa_UmaColôniaCercadaDeEstâncias.png" alt="Mountains" style="width:100%">
-    </div>
+
   </div>
 
-  <!-- END MAIN -->
-</div>
+</body>
 
-<script>
-  window.onscroll = function () { myFunction() };
-
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-</script>
+</html>

@@ -1,49 +1,68 @@
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
-
-    <title>Uma Colônia Cercada de Instâncias</title>
-
-    <link rel="stylesheet" type="text/css" href="projetos.css" media="screen" />
-
+    <title>Uma Colônia Cercada de Estâncias - Guilherme Bueno Design</title>
+    <!--Define o título da aba no navegador-->
+    <link rel="stylesheet" type="text/css" href="projetos.css" media="screen" /> <!-- Chama o CSS com os estilos -->
 </head>
 
-<!-- Barra navegação-->
-<div id="navbar">
+<!-- Barra de navegação -->
+<div class="barraNaveg">
+
     <a href="index.html">guilherme bueno</a>
-    <a>&emsp;&emsp;</a>
     <a href="sobre.html">sobre</a>
+
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="column-left">
-            <img src="Img\BiomaPampa\capa_AnaisDoICongressoSobreOBiomaPampa.png" alt="Lights"><br>
-            <img src="Img\capa_DesigualdadesEmSaúdeMaternoInfantil.png" alt="Nature"><br>
-            <img src="Img\capa_LetrasDaProduçãoÀDidática.png" alt="Lights">
+<!-- Miolo do site -->
+
+<body>
+        <div class="linha">
+
+            <div class="coluna-esq">
+
+                <img src="Img\BiomaPampa\capa_AnaisDoICongressoSobreOBiomaPampa.png"><br>
+                <img src="Img\capa_UmaColôniaCercadaDeEstâncias.png"><br>
+                <img src="Img\capa_LetrasDaProduçãoÀDidática.png"><br>
+                <img src="Img\capa_MemóriaEPatrimônio_Vol1.png"><br>
+                <img src="Img\capa_OLugarDoAbjeto.png"><br>
+                <img src="Img\capa_ProcessosDeTrabalhoESeusEfeitos.png">
+
+            </div>
+
+            <div class="coluna-dir">
+
+                <h1>TÍTULO DO PROJETO</h1>
+
+                <p class="caracteresPorLinha">
+
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                    piece of classical Latin
+                    literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                    Hampden-Sydney
+                    College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum
+                    passage, and
+                    going through the cites of the word in classical literature, discovered the undoubtable source.
+                    Lorem Ipsum comes
+                    from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
+                    by Cicero,
+                    written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
+                    Renaissance. The first
+                    line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                    Sections 1.10.32
+                    and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact
+                    original form,
+                    accompanied by English versions from the 1914 translation by H. Rackham.
+
+                </p>
+
+            </div>
+
         </div>
-        <div class="column-right">
-            <h1>NOME DO PROJETO</h1>
 
-            <body>Projeto realizado em tal período, para tal pessoa. Descrição brevíssima sobre a obra. Descrição do que
-                fiz</body><br><br>
+</body>
 
-            <body><b>Guilherme Bueno</b><br><small>diagramação & projeto gráfico</small></body>
-        </div>
-    </div>
-</div>
-
-<script>
-    window.onscroll = function () { myFunction() };
-  
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-  
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-  </script>
+</html>

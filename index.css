@@ -88,7 +88,7 @@ p {
 .coluna a:hover {
   outline: 1px #18191A;
   outline-style: dotted;
-  outline-offset: 16px;
+  outline-offset: 8px;
   color: #18191A;
 }
 

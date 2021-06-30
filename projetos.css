@@ -84,7 +84,8 @@ p {
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 20px;
-      width: 500px;
+      min-width: 350px;
+      max-height: 650px;
       /*
       margin-bottom: 20px;
       box-align: middle;

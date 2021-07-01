@@ -22,7 +22,7 @@ p {
 
 /* Classe que define o número de caracteres máximo por linha. Deve ser chamado no html */
 .caracteresPorLinha {
-  width: 50ch;
+  width: 55ch;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

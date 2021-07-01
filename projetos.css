@@ -21,6 +21,13 @@ p {
   font-weight: normal;
 }
 
+/* Definições visuais de links */
+a {
+  color: #797979;
+  text-decoration: none;
+  /* text-decoration: underline #ff8b8b; */
+}
+
 /* Classe que define o número de caracteres máximo por linha. Deve ser chamado no html */
 .caracteresPorLinha {
   max-width: 55ch;

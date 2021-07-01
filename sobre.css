@@ -21,6 +21,14 @@ p {
   font-weight: normal;
 }
 
+/* Definições visuais das listas */
+ul {
+  list-style-position: outside;
+  list-style-type: circle;
+  /* margin: 0; */
+  padding: 0;
+}
+
 /* Classe que define o número de caracteres máximo por linha. Deve ser chamado no html */
 .caracteresPorLinha {
   max-width: 55ch;

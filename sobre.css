@@ -9,7 +9,7 @@ body {
 h1 {
   font-size: 12px;
   line-height: 1.5;
-  word-break: break-all;
+  word-wrap: break-word;
   font-weight: bold;
 }
 
@@ -17,7 +17,7 @@ h1 {
 p {
   font-size: 12px;
   line-height: 1.5;
-  word-break: break-all;
+  word-wrap:break-word;
   font-weight: normal;
 }
 

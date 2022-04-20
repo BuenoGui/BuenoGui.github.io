@@ -85,12 +85,14 @@ p {
   width: 100%;
 }
 
+/* Isso aqui tá bugado, não tá mais formando a caixa com a altura devida.
 .coluna a:hover {
   outline: 1px #18191A;
   outline-style: dotted;
   outline-offset: 8px;
   color: #18191A;
 }
+*/
 
 /* Layout responsivo - adapta o layout para duas colunas */
 @media screen and (max-width: 800px) {

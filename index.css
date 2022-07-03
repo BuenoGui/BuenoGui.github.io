@@ -1,35 +1,47 @@
+html {
+  --bg-color-light: #f1f1f1;
+  --color-offblack: #18191a;
+}
+
 body {
-  background-color: #f1f1f1;
-  color: #18191A;
-  font-family: sans-serif;
-  font-size: 12px;
+  background-color: var(--bg-color-light);
+  color: var(--color-offblack);
+  overflow: auto;
 }
 
-h1 {
-  font-size: 12px;
-  line-height: 1.5;
-  word-wrap: break-word;
-  font-weight: bold;
+.container {
+  padding: 4rem 2rem;
 }
 
-/* Definições visuais do estilo de parágrafo */
-p {
-  font-size: 12px;
-  line-height: 1.5;
-  word-wrap: break-word;
-  font-weight: normal;
+.header {
+  width: 100%;
+  background-color: var(--bg-color-light);
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 2px solid var(--color-offblack);
+  z-index: 10;
 }
 
-/* Classe que define o número de caracteres máximo por linha. Deve ser chamado no html */
-.caracteresPorLinha {
-  width: 55ch;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.grid-nav {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: max-content min-content min-content;
+  /*
+  Justifica os itens da navegação no centro da página
+  justify-content: center;
+  */
 }
 
- /* Classe que define a barra de navegação */
- .barraNaveg {
+.index-main {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+/* Classe que define a barra de navegação */
+.barraNaveg {
   overflow: hidden;
   background-color: #f1f1f1;
   position: fixed; /* Set the navbar to fixed position */
@@ -37,75 +49,43 @@ p {
   width: 100%; /* Full width */
 }
 
-/* Links internos da barra de navegação */
-.barraNaveg a {
-  float: left;
-  display: block;
-  color: #18191A;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Muda o background do link com a passagem do mouse
-.barraNaveg a:hover {
-  outline: 1px #18191A;
-  outline-style: solid;
-  outline-offset: -6px;
-  color: #18191A;
-} */
-
-/* Classe que define o "miolo" do site. Importante para o uso da barra de navegação */
-.miolo {
-  margin-top: 44px; /* Margem superior que impede o texto de "nascer" abaixo da barra de navegação */
-  /* margin-left: 16px; FAZ SENTIDO NA PAGINA SOBRE */
-  max-width: 1280px;
-  margin: auto;
-} 
-
-/* Definições do mosaico */
-/* Classe que define as linhas do mosaico */
-.linha {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 20px;
-}
-
-/* Classe que define as colunas. O jogo de porcentagem define o número de colunas.  */
-.coluna {
-  flex: 10%;
-  max-width: 33.333%;
-  padding: 0 20px;
-}
-
-/* Acho que essa classe define o funcionamento das imagens nas colunas */
-.coluna img {
-  margin-top: 44px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Isso aqui tá bugado, não tá mais formando a caixa com a altura devida.
-.coluna a:hover {
-  outline: 1px #18191A;
-  outline-style: dotted;
-  outline-offset: 8px;
-  color: #18191A;
-}
-*/
-
-/* Layout responsivo - adapta o layout para duas colunas */
-@media screen and (max-width: 800px) {
-  .coluna {
-    flex: 100%;
-    max-width: 50%;
+@media screen and (min-width: 600px) {
+  .index-main {
+    max-width: initial;
   }
-}
+  .index-flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    /* Your container needs a fixed height, and it 
+     * needs to be taller than your tallest column. */
+    width: 80%;
+    max-width: 1000px;
+    height: 240rem;
+  }
 
-/* Layout responsivo - Empilha todas colunas. */
-@media screen and (max-width: 600px) {
-  .coluna {
-    flex: 100%;
-    max-width: 100%;
+  .index-flex-item {
+    width: 32%;
+    margin-bottom: 1rem; /* Optional */
+  }
+
+  /* Re-order items into 3 rows */
+  .index-flex-item:nth-child(3n + 1) {
+    order: 1;
+  }
+  .index-flex-item:nth-child(3n + 2) {
+    order: 2;
+  }
+  .index-flex-item:nth-child(3n) {
+    order: 3;
+  }
+
+  /* Force new columns */
+  .index-flex-container::before,
+  .index-flex-container::after {
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    order: 2;
   }
 }

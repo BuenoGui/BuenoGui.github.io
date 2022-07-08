@@ -1,81 +1,67 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
+    <!-- Inserir o troço do fav icon-->
+    <meta charset="UTF-8" />
     <title>Série Memória & Patrimônio - Guilherme Bueno Design</title>
-    <!--Define o título da aba no navegador-->
-    <link rel="stylesheet" type="text/css" href="projetos.css" media="screen" /> <!-- Chama o CSS com os estilos -->
-</head>
+    <link rel="stylesheet" href="flexmasonry.css" />
+    <link rel="stylesheet" type="text/css" href="remedy.css" />
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<!-- Barra de navegação -->
-<div class="barraNaveg">
+  <body class="body-container">
+    <header class="header">
+      <nav class="grid-nav">
+        <a class="nav-item" href="index.html">guilherme bueno</a>
+        <a class="nav-item" href="sobre.html">sobre</a>
+      </nav>
+    </header>
 
-    <a href="index.html">guilherme bueno</a>
-    <a href="sobre.html">sobre</a>
-
-</div>
-
-<!-- Miolo do site -->
-
-<body>
-    <div class="linha">
-
-        <div class="coluna-esq">
-
-            <img src="Img\Memória&Patrimônio\01-M&P-Vol1.png"><br>
-            <img src="Img\Memória&Patrimônio\02-M&P-Vol2.png"><br>
-            <img src="Img\Memória&Patrimônio\03-M&P-Vol3.png"><br>
-            <img src="Img\Memória&Patrimônio\04-FR.png"><br>
-            <img src="Img\Memória&Patrimônio\05-Sum.png"><br>
-            <img src="Img\Memória&Patrimônio\06-Apres.png"><br>
-            <img src="Img\Memória&Patrimônio\07-Texto.png"><br>
-            <img src="Img\Memória&Patrimônio\08-AbSeção.png"><br>
-            <img src="Img\Memória&Patrimônio\09-AbCap.png"><br>
-            <img src="Img\Memória&Patrimônio\10-Imagem.png"><br>
-            <img src="Img\Memória&Patrimônio\11-Ref.png"><br>
-            <img src="Img\Memória&Patrimônio\12-Imagem.png"><br>
-            <img src="Img\Memória&Patrimônio\13-Imagem.png"><br>
-            <img src="Img\Memória&Patrimônio\14-Dialogo.png"><br>
-            <img src="Img\Memória&Patrimônio\15-Tabelas.png"><br>
-            <img src="Img\Memória&Patrimônio\16-Contra.png">
-
+    <main class="grid-duas-colunas-2-1">
+      <div class="grid-duas-colunas-2">
+        <p><a class="slideshow-controle" href="#" onclick="proxSlide(-1)">anterior</a> | <a class="slideshow-controle" href="#" onclick="proxSlide(1)">próxima</a></p>
+        <div class="slideshow-container" onclick="proxSlide(1)">
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\01-M&P-Vol1.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\02-M&P-Vol2.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\03-M&P-Vol3.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\04-FR.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\05-Sum.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\06-Apres.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\07-Texto.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\08-AbSeção.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\09-AbCap.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\10-Imagem.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\11-Ref.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\12-Imagem.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\13-Imagem.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\14-Dialogo.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\15-Tabelas.png" />
+          <img class="slideshow-item" src="Img\Memória&Patrimônio\16-Contra.png" />
         </div>
+      </div>
 
-        <div class="coluna-dir">
-
-            <h1>
-                <b><small>SÉRIE</small><br>
-                    Memória <small>&</small> Patrimônio</b><br>
-               Volumes <small>I, II</small> e <small>III</small><br><br>
-                Editora <small>UFPEL</small>
-            </h1>
-<br> <!-- Apenas para dar mais um espaço entre o heading e o texto -->
-            <p class="caracteresPorLinha">
-
-                <b>Ano de publicação</b><br>
-                2019 e 2020<br><br>
-                <b>Nº de páginas</b><br>
-                240 p. — Vol.<small>I</small><br>
-                333 p. — Vol.<small>II</small><br>
-                210 p. — Vol.<small>III</small><br><br>
-                <b>Guilherme Bueno</b><br>
-                Projeto Gráfico<br>
-                Capa — Vol. <small>I, II e II</small><br>
-                Diagramação — Vol. <small>I e III</small><br><br>
-                <b>Suélen Lulhier</b><br>
-                Diagramação — Vol. <small>II</small><br><br>
-                <b>Links de acesso</b><br>
-                <a href="http://guaiaca.ufpel.edu.br:8080/handle/prefix/4931">Memória & patrimônio: lugares, sociabilidades e educação: Volume I</a><br>
-                <a href="http://guaiaca.ufpel.edu.br:8080/handle/prefix/4955">Memória & Patrimônio: Identidade, emoção e ditaduras: Volume II</a><br>
-                <a href="http://guaiaca.ufpel.edu.br:8080/handle/prefix/4965">Memória & patrimônio: Preservação, políticas e acesso - Volume III</a>
-
-
-            </p>
-
-        </div>
-
-    </div>
-
-</body>
-
+      <div class="grid-duas-colunas-1">
+        <p>
+          <b><span class="smallC">Série</span></b>
+          <br />
+          <b>Memória & Patrimônio</b>
+          <br />
+          Editora <span class="smallC">UFPEL</span>
+        </p>
+        <p>
+          Projeto gráfico, diagramação e capa desenvolvidos para a série <i>Memória & Patrimônio</i>. O interior da obra foi projetado visando propiciar uma boa experiência de
+          leitura em telas, em espeical de tablets e celulares. As capas possuem uma solução tipográfica semelhante, com alteração da cor de destaque para identificar cada volume
+          da série. Além disso, as ilustrações da capa de cada edição apresentam colagens das imagens contidas no interior da respectiva obra. Por fim, foi aplicado um efeito de
+          retícula de impressão por cima do resultado visual para remeter aos conceitos de memória e passado.
+        </p>
+        <p>
+          -<br />
+          2019 | 2020<br />
+          com Suélen Lulhier
+        </p>
+      </div>
+    </main>
+    <script src="slideshow.js"></script>
+  </body>
 </html>

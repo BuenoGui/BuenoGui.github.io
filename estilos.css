@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100;0,8..30,200;0,8..30,300;0,8..30,400;0,8..30,500;0,8..30,600;0,8..30,700;0,8..30,800;0,8..30,900;1,8..30,100;1,8..30,200;1,8..30,300;1,8..30,400;1,8..30,500;1,8..30,600;1,8..30,700;1,8..30,800;1,8..30,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  font-size: initial;
+}
+
+html {
+  --bg-color-light: rgb(228, 225, 219);
+  --color-offblack: #333;
+  --color-light-gray: #d3d3d3;
+  --color-highlight: #f8de7e;
+  --color-red: #933;
+  --color-blue: #60afff;
+}
+
+body {
+  font-family: "Piazzolla", Georgia, Times, "Times New Roman", serif;
+  background-color: var(--bg-color-light);
+  color: var(--color-offblack);
+  overflow: auto;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+b {
+  font-weight: bold;
+}
+
+.body-container {
+  padding: 4rem 1.5rem;
+}
+
+.header {
+  width: 100%;
+  background-color: var(--bg-color-light);
+  border-bottom: 1px solid var(--color-light-gray);
+  padding: 1.2rem 1.5rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+footer {
+  width: 100%;
+  border-top: 1px solid var(--color-light-gray);
+  padding: 0.6rem 3rem;
+  font-size: 0.8rem;
+}
+
+footer p {
+  float: right;
+}
+
+.grid-nav {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: max-content min-content min-content;
+  /*justify-content: center;*/
+}
+
+.nav-item {
+  color: var(--color-offblack);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  box-shadow: 0 0 0 0 var(--bg-color-light), 0 1px 0 0 var(--color-offblack);
+}
+
+.nav-item:active {
+  opacity: 0.5;
+}
+
+.nav-item-selecionado {
+  font-variant: all-small-caps;
+  font-weight: 900;
+}
+
+.index-main {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.index-main-item {
+  padding: 0.5rem;
+}
+
+p {
+  max-width: 66ch;
+}
+
+::-moz-selection,
+::selection {
+  background: var(--color-highlight);
+}
+
+.link-externo::after {
+  position: relative;
+  content: "\FEFF°";
+  margin-left: 0.1em;
+  font-size: 90%;
+  top: -0.1em;
+  color: var(--color-red);
+  font-feature-settings: "caps";
+  font-variant-numeric: normal;
+}
+
+/*
+ESTILOS PÁGINA SOBRE
+*/
+
+.sobre-contato {
+  font-weight: bold;
+}
+
+.sobre-link {
+  text-decoration: none;
+  color: var(--color-offblack);
+}
+
+/*
+ESTILOS PÁGINAS PROJETOS
+*/
+
+/*
+SLIDESHOW
+*/
+
+.slideshow-item {
+  height: 100%;
+  display: none;
+  margin: 0 auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  aspect-ratio: 14 / 9;
+  position: relative;
+  margin: auto;
+  background-size: contain;
+}
+
+.slideshow-container:hover {
+  cursor: pointer;
+}
+
+.slideshow-controle {
+  color: var(--color-offblack);
+  text-decoration: none;
+  font-variant: small-caps;
+}
+
+.smallC {
+  font-variant: all-small-caps;
+}
+
+@media screen and (min-width: 75rem) {
+  .grid-duas-colunas-2-1 {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 30rem;
+  }
+
+  .grid-duas-colunas-1 {
+    border-left: 1px solid var(--color-light-gray);
+    padding-left: 1rem;
+    padding-top: 2.3rem;
+  }
+}

@@ -1,82 +1,72 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
+    <!-- Inserir o troço do fav icon-->
+    <meta charset="UTF-8" />
     <title>Letras: Da produção à didática - Guilherme Bueno Design</title>
-    <!--Define o título da aba no navegador-->
-    <link rel="stylesheet" type="text/css" href="projetos.css" media="screen" /> <!-- Chama o CSS com os estilos -->
-</head>
+    <link rel="stylesheet" href="flexmasonry.css" />
+    <link rel="stylesheet" type="text/css" href="remedy.css" />
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<!-- Barra de navegação -->
-<div class="barraNaveg">
+  <body class="body-container">
+    <header class="header">
+      <nav class="grid-nav">
+        <a class="nav-item" href="index.html">guilherme bueno</a>
+        <a class="nav-item" href="sobre.html">sobre</a>
+      </nav>
+    </header>
 
-    <a href="index.html">guilherme bueno</a>
-    <a href="sobre.html">sobre</a>
-
-</div>
-
-<!-- Miolo do site -->
-
-<body>
-    <div class="linha">
-
-        <div class="coluna-esq">
-
-            <img src="Img\LetrasProdDidat\LPD_01-capa.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_02-ffr.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_03-exp.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_04-fr.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_05-org.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_06-sum.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_07-AbSeção.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_08-Apresentação.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_09-Apresentação-2.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_10-AbSeção-2.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_11-prog.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_12-listaComunicações.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_13-oficinas.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_14-oficinas-2.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_15-AbSeção-3.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_16-resumo.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_17-resumo-2.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_18-AbSeção-4.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_19-AbCap.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_20-miolo.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_21-miolo-2.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_22-miolo-3.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_23-miolo-4.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_24-miolo-5.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_25-miolo-6.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_26-miolo-7.png"><br>
-            <img src="Img\LetrasProdDidat\LPD_27-fim.png">
-
+    <main class="grid-duas-colunas-2-1">
+      <div class="grid-duas-colunas-2">
+        <p><a class="slideshow-controle" href="#" onclick="proxSlide(-1)">anterior</a> | <a class="slideshow-controle" href="#" onclick="proxSlide(1)">próxima</a></p>
+        <div class="slideshow-container" onclick="proxSlide(1)">
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_01-capa.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_02-ffr.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_03-exp.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_04-fr.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_05-org.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_06-sum.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_07-AbSeção.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_08-Apresentação.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_09-Apresentação-2.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_10-AbSeção-2.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_11-prog.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_12-listaComunicações.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_13-oficinas.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_14-oficinas-2.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_15-AbSeção-3.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_16-resumo.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_17-resumo-2.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_18-AbSeção-4.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_19-AbCap.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_20-miolo.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_21-miolo-2.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_22-miolo-3.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_23-miolo-4.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_24-miolo-5.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_25-miolo-6.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_26-miolo-7.png" />
+          <img class="slideshow-item" src="Img\LetrasProdDidat\LPD_27-fim.png" />
         </div>
+      </div>
 
-        <div class="coluna-dir">
-
-            <h1>
-                <b>Letras: Da produção à didática</b><br>
-               Anais da 33ª Semana Acadêmica <br>de Letras da Universidade Federal de Pelotas<br><br>
-               Editora <small>UFPEL</small><br>
-            </h1>
-            <br> <!-- Apenas para dar mais um espaço entre o heading e o texto -->
-            <p class="caracteresPorLinha">
-
-                <b>Ano de publicação</b><br>
-                2020<br><br>
-                <b>Nº de páginas</b><br>
-                167 p.<br>
-                <br><b>Guilherme Bueno</b><br>
-                Projeto gráfico, Capa <small>&</small> Diagramação<br><br>
-                <b>Link de acesso</b><br>
-                <a href="http://guaiaca.ufpel.edu.br:8080/handle/prefix/5029">Letras: Da produção à didática</a>
-
-            </p>
-
-        </div>
-
-    </div>
-
-</body>
-
+      <div class="grid-duas-colunas-1">
+        <p>
+          <b>Letras: da Produção à Didática</b><br />
+          Editora <span class="smallC">UFPEL</span>
+        </p>
+        <p>
+          Projeto gráfico, diagramação e capa desenvolvidos para a obra <i>Letras: da Produção à Didática</i>. O interior do livro foi inteiramente projetado em uma tentativa de
+          valorizar as letras e as composições tipográficas, visando fazer jus à temática do texto.
+        </p>
+        <p>
+          -<br />
+          2020<br />
+        </p>
+      </div>
+    </main>
+    <script src="slideshow.js"></script>
+  </body>
 </html>

@@ -90,7 +90,7 @@ footer p {
 }
 
 p {
-  max-width: 66ch;
+  max-width: 55ch;
 }
 
 ::-moz-selection,
@@ -163,7 +163,7 @@ SLIDESHOW
   .grid-duas-colunas-2-1 {
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr 30rem;
+    grid-template-columns: 2fr 1fr;
   }
 
   .grid-duas-colunas-1 {

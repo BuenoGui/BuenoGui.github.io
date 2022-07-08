@@ -165,7 +165,6 @@ var FlexMasonry = (function (e) {
   },
 ]).default;
 
-/* Opções e Inicialização do Script */
 FlexMasonry.init(".flexmasonry-grid", {
   responsive: true,
   breakpointCols: {

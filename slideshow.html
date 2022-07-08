@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS ====================================================================-->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #e1e1e1;
+        padding: 5rem;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+      }
+      .slideshow-item {
+        display: none;
+      }
+
+      /* Slideshow container */
+      .slideshow-container {
+        width: 100%;
+        aspect-ratio: 1.618 / 1;
+        position: relative;
+        margin: auto;
+        background-size: cover;
+      }
+
+      .slideshow-container:hover {
+        cursor: pointer;
+        /* box-shadow: 0 0 0 0.2rem #e1e1e1, 0 0 0 0.3rem lightgray; */
+      }
+    </style>
+
+    <!-- HTML ====================================================================-->
+  </head>
+  <body>
+    <div class="slideshow-container" onclick="proxSlide(1)">
+      <img class="slideshow-item" src="img/Moscoso.png" />
+
+      <img class="slideshow-item" src="img/trepkowsky.png" />
+    </div>
+    <br />
+
+    <!-- SCRIPT ====================================================================-->
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function proxSlide(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slideshow-item");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>

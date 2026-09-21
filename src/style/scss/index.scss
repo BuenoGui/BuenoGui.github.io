@@ -1,0 +1,204 @@
+body {
+    font-family: Chakra Petch;
+}
+
+main {
+    .main_text {
+        
+        flex-direction: column;
+
+        * {
+            padding-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 64px;
+            font-weight: 500;
+            color: #e7e7e7;
+        }
+
+        p {
+            color: #E0E0E0;
+            font-size: 28px;
+        }
+
+    }
+
+    .code_background {
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../../images/code_background.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 520px;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img {
+        max-height: 95%;
+        border-radius: 2%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    
+}
+
+#sobre {
+    background-image: linear-gradient(to bottom, #001300, #063401);
+    padding-top: 40px;
+
+    
+
+    .card_holders {
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+        .card_habilidade {
+
+        &:hover {
+            transition: 1.2s;
+            box-shadow: rgba(57, 255, 20, 0.88) 0px 5px 15px;
+
+            h3 {
+                color: rgb(32, 208, 1);
+                transition: 0.8s;
+            }
+
+            .card_habilidade_text {
+                color:rgba(57, 255, 20, 1);
+                transition: 0.8s;
+            }
+
+        }
+
+            background-color: #17342c;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            box-shadow: rgba(38, 170, 13, 0.502) 0px 5px 15px;
+            margin-bottom: 24px;
+
+            width: 42%;
+            height: 360px;
+
+            h3 {
+            font-size: 52px;
+            text-align: center;
+            color:rgba(57, 255, 20, 1);
+            }
+
+
+            &_text {
+                display: flex;
+                flex-direction: column;
+                font-size: 24px;
+                color: rgba(38, 170, 13, 1);
+                padding-left: 22px;
+
+                i {
+                    font-size: 32px;
+                }
+
+                a {
+                    background-color: #3e992394;
+                    color:rgba(57, 255, 20, 1);
+                    text-align: center;
+                    max-width: 40%;
+                    margin-left: 30%;
+                    border-radius: 22px;
+                }
+
+                .logo_holders {
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+
+
+
+        }
+        
+
+
+
+    }
+}
+
+#projetos {
+    padding-top: 80px;
+    background-image: linear-gradient(to bottom, #063401, #042401);
+    color: #E7E7E7;
+
+    h4 {
+        text-align: center;
+        font-size: 64px;
+        padding-bottom: 64px;
+    }
+
+    .git_container {
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .projeto {
+
+            &:hover {
+                transition: 0.8s;
+                box-shadow: rgba(38, 170, 13, 0.25) 0px 54px 55px, rgba(38, 170, 13, 0.12) 0px -12px 30px, rgba(38, 170, 13, 0.12) 0px 4px 6px, rgba(38, 170, 13, 0.17) 0px 12px 13px, rgba(38, 170, 13, 0.09) 0px -3px 5px;
+
+
+
+                h2 {
+                    transition: 0.8s;
+                    color: #c917eb
+                }
+            }
+
+
+            cursor:pointer;
+            background-color: #011500;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 22px;
+            margin-bottom: 64px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 26%;
+            align-items: center;
+
+            h2 {
+                color: #910DAA;
+                font-size: 38px;
+                font-weight: 800;
+                padding-top: 24px;
+            }
+
+            .linguagem {
+                color: #E0E0E0;
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                padding-left: 12px;
+                padding-top: 8px;
+                p {
+                    font-size: 16px;
+
+                    i {
+                        padding-left: 12px;
+                        font-size: 32px;
+                    }
+                }
+
+
+            }
+
+            .data_projeto {
+                color: #777777;
+                margin: 0;
+            }
+        }
+    }
+
+}

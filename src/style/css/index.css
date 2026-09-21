@@ -1,0 +1,152 @@
+body {
+  font-family: Chakra Petch;
+}
+
+main .main_text {
+  flex-direction: column;
+}
+main .main_text * {
+  padding-bottom: 16px;
+}
+main .main_text h1 {
+  font-size: 64px;
+  font-weight: 500;
+  color: #e7e7e7;
+}
+main .main_text p {
+  color: #E0E0E0;
+  font-size: 28px;
+}
+main .code_background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/code_background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 520px;
+  justify-content: space-between;
+  align-items: center;
+}
+main img {
+  max-height: 95%;
+  border-radius: 2%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#sobre {
+  background-image: linear-gradient(to bottom, #001300, #063401);
+  padding-top: 40px;
+}
+#sobre .card_holders {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#sobre .card_holders .card_habilidade:hover {
+  transition: 1.2s;
+  box-shadow: rgba(57, 255, 20, 0.88) 0px 5px 15px;
+}
+#sobre .card_holders .card_habilidade:hover h3 {
+  color: rgb(32, 208, 1);
+  transition: 0.8s;
+}
+#sobre .card_holders .card_habilidade:hover .card_habilidade_text {
+  color: rgb(57, 255, 20);
+  transition: 0.8s;
+}
+#sobre .card_holders .card_habilidade {
+  background-color: #17342c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: rgba(38, 170, 13, 0.502) 0px 5px 15px;
+  margin-bottom: 24px;
+  width: 42%;
+  height: 360px;
+}
+#sobre .card_holders .card_habilidade h3 {
+  font-size: 52px;
+  text-align: center;
+  color: rgb(57, 255, 20);
+}
+#sobre .card_holders .card_habilidade_text {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  color: rgb(38, 170, 13);
+  padding-left: 22px;
+}
+#sobre .card_holders .card_habilidade_text i {
+  font-size: 32px;
+}
+#sobre .card_holders .card_habilidade_text a {
+  background-color: rgba(62, 153, 35, 0.5803921569);
+  color: rgb(57, 255, 20);
+  text-align: center;
+  max-width: 40%;
+  margin-left: 30%;
+  border-radius: 22px;
+}
+#sobre .card_holders .card_habilidade_text .logo_holders {
+  display: flex;
+  justify-content: space-around;
+}
+
+#projetos {
+  padding-top: 80px;
+  background-image: linear-gradient(to bottom, #063401, #042401);
+  color: #E7E7E7;
+}
+#projetos h4 {
+  text-align: center;
+  font-size: 64px;
+  padding-bottom: 64px;
+}
+#projetos .git_container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#projetos .git_container .projeto:hover {
+  transition: 0.8s;
+  box-shadow: rgba(38, 170, 13, 0.25) 0px 54px 55px, rgba(38, 170, 13, 0.12) 0px -12px 30px, rgba(38, 170, 13, 0.12) 0px 4px 6px, rgba(38, 170, 13, 0.17) 0px 12px 13px, rgba(38, 170, 13, 0.09) 0px -3px 5px;
+}
+#projetos .git_container .projeto:hover h2 {
+  transition: 0.8s;
+  color: #c917eb;
+}
+#projetos .git_container .projeto {
+  cursor: pointer;
+  background-color: #011500;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 22px;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 26%;
+  align-items: center;
+}
+#projetos .git_container .projeto h2 {
+  color: #910DAA;
+  font-size: 38px;
+  font-weight: 800;
+  padding-top: 24px;
+}
+#projetos .git_container .projeto .linguagem {
+  color: #E0E0E0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-top: 8px;
+}
+#projetos .git_container .projeto .linguagem p {
+  font-size: 16px;
+}
+#projetos .git_container .projeto .linguagem p i {
+  padding-left: 12px;
+  font-size: 32px;
+}
+#projetos .git_container .projeto .data_projeto {
+  color: #777777;
+  margin: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
